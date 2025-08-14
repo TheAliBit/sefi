@@ -31,6 +31,10 @@ FRONTEND_DOMAIN = config('FRONTEND_DOMAIN')
 # Application definition
 
 INSTALLED_APPS = [
+    # Admin panel theme
+    'admin_interface',
+    'colorfield',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -144,3 +148,4 @@ from .config.cors_cookie import *
 from .config.jwt import *
 from .config.rest_framework import *
 from .config.statics_media import *
+from .config.admin_interface import *
